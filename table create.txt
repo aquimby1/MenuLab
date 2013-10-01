@@ -1,0 +1,7 @@
+CREATE TABLE `menu_list` (
+  `item_id` int(11) NOT NULL AUTO_INCREMENT,
+  `item` varchar(45) NOT NULL,
+  `price` double NOT NULL,
+  PRIMARY KEY (`item_id`),
+  UNIQUE KEY `item_id_UNIQUE` (`item_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>orderController</servlet-name>
+        <servlet-class>controller.orderController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>recieptController</servlet-name>
+        <servlet-class>controller.recieptController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MenuListController</servlet-name>
+        <servlet-class>controller.MenuListController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>orderController</servlet-name>
+        <url-pattern>/orderController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>recieptController</servlet-name>
+        <url-pattern>/recieptController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MenuListController</servlet-name>
+        <url-pattern>/MenuListController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
